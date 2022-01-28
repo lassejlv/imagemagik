@@ -9,6 +9,9 @@ const PORT = process.env.PORT || 5000;
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
+// the maximum size of the file to be uploaded
+var maxSize = 1 * 2000 * 2000;
+
 const fileStorage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, "public/uploads");
@@ -16,6 +19,12 @@ const fileStorage = multer.diskStorage({
 
     filename: (req, file, cb) => {
         cb(null, yourid.generate(15) + "-" + file.originalname);
+    },
+
+    onFileUploadStart: function (file, req, res) {
+        if (req.files.file.length > maxSize) {
+            return false;
+        }
     },
 });
 

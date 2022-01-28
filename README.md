@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://imagemagik.herokuapp.com">
-    <img src="https://imagemagik.herokuapp.com/uploads/darHJNtuKvSyU5f-upload.png" alt="Hypestyle logo" width="200" height="165">
+    <img src="https://imagemagik.herokuapp.com/uploads/8YatKIb0lfZfhgf-upload.png" alt="Hypestyle logo" width="200" height="165">
   </a>
 </p>
 

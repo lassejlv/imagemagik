@@ -33,6 +33,29 @@ app.post("/api/upload/multiple", upload.array("images", 3), (req, res) => {
     res.send("File upload multiple success!");
 });
 
+app.get("/api/uploads", (req, res) => {
+    const fs = require("fs");
+
+    const key = req.query.key;
+
+    if (key === process.env.KEY) {
+        fs.readdir("public/uploads", (err, files) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.send(files);
+            }
+        });
+    } else {
+        res.json({
+            status: 204,
+            error: "Unauthorized",
+            error_id: yourid.generate(30),
+            timestamp: new Date().toISOString(),
+        });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

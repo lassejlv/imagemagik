@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>Uploaded with sussess!</title>
+    </head>
+    <body style="background: #2c3e50">
+        <h1
+            style="color: white; margin-top: 10rem; font-weight: bold"
+            class="text-center"
+        >
+            Your image was uploaded with success!
+        </h1>
+        <br />
+        <div class="text-center w-full">
+            <button class="btn btn-primary btn-lg">
+                <a
+                    style="
+                        text-decoration: none;
+                        color: white;
+                        font-family: monospace;
+                    "
+                    href="/uploads/<%- image  %> "
+                    class="btn-lg"
+                    target="_blank"
+                >
+                    👁 View image
+                </a>
+            </button>
+            <button type="btn" class="btn btn-secondary btn-lg">
+                <a
+                    style="
+                        text-decoration: none;
+                        color: white;
+                        font-family: monospace;
+                    "
+                    value="https://imagemagik.herokuapp.com/uploads/<%- image  %>"
+                    id="copy"
+                    class="btn-lg"
+                    target="_blank"
+                >
+                    🔗 Copy URL
+                </a>
+            </button>
+            <button class="btn btn-success btn-lg">
+                <a
+                    style="
+                        text-decoration: none;
+                        color: white;
+                        font-family: monospace;
+                    "
+                    href="/uploads/<%- image  %> "
+                    class="btn-lg"
+                    target="_blank"
+                    download="<%- image  %>"
+                >
+                    <i class="fa fa-download"></i> Download
+                </a>
+            </button>
+        </div>
+        <script>
+            const btn = document.getElementById("copy");
+            btn.addEventListener("click", function () {
+                const val =
+                    "https://imagemagik.herokuapp.com/uploads/<%- image  %>";
+
+                navigator.clipboard.writeText(val).then(
+                    function () {
+                        console.log("Copied to clipboard");
+                    },
+                    function (err) {
+                        console.error("Could not copy text: ", err);
+                    }
+                );
+                btn.innerHTML = "✅ Copied to clipboard!";
+
+                setTimeout(() => {
+                    btn.innerHTML = "🔗 Copy URL";
+                }, 2000);
+            });
+        </script>
+    </body>
+</html>

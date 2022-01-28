@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Imagemagik | Free, safe and secure image hosting provider for everyone!"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+        <title>Imagemagik</title>
+    </head>
+    <body style="background: #2c3e50">
+        <div class="row mt-5">
+            <div class="col-sm-auto m-auto">
+                <div class="card card-body">
+                    <h1 class="text-center mb-3">
+                        <i class="fas fa-sign-in-alt"></i>Upload
+                    </h1>
+                    <form
+                        action="https://imagemagik.herokuapp.com/api/upload/single"
+                        method="POST"
+                        enctype="multipart/form-data"
+                    >
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input
+                                        type="file"
+                                        class="custom-file-input"
+                                        name="image"
+                                        accept="image/png, image/jpeg, image/jpg"
+                                        id="inputGroupFile02"
+                                    />
+                                    <label
+                                        class="custom-file-label"
+                                        for="inputGroupFile02"
+                                        aria-describeby="inputGroupFileAddon02"
+                                        >Choose file</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <input
+                            type="submit"
+                            value="Upload"
+                            class="btn btn-dark btn-block"
+                        />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

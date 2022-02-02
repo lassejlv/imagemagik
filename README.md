@@ -1,13 +1,13 @@
 <p align="center">
-  <a href="https://imagemagik.herokuapp.com">
-    <img src="https://imagemagik.herokuapp.com/upload.png" alt="Hypestyle logo" width="200" height="165">
+  <a href="https://meap6.netlify.app">
+    <img src="https://meap6.netlify.app/logo.png" alt="Hypestyle logo" width="200" height="165">
   </a>
 </p>
 
-<h3 align="center">Imagemagik</h3>
+<h3 align="center">Meap6</h3>
 
 <p align="center">
-  Free, safe and secure image hosting provider for everyone!
+  Meap6 is a multi-functional discord bot for your server.
   <br>
 
 <div align="center">
@@ -23,10 +23,10 @@
 Download the source code
 
 ```bash
-git clone https://github.com/lassv/imagemagik.git
+git clone https://github.com/lassv/meap6.git
 ```
 
-Install dependencies
+Install dependencies in all the folders
 
 ```bash
 npm install
@@ -35,7 +35,24 @@ npm install
 Run the server
 
 ```bash
+cd server
 npm run dev
 ```
 
-Then go to <code>http://localhost:5000</code>
+Run the client
+
+```bash
+cd client
+npm start
+```
+
+Run the bot
+
+```bash
+cd bot
+npm run dev
+```
+
+
+
+Then go to <code>http://localhost:3000</code> to see the client and the backend is on <code>http://localhost:4000</code>

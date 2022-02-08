@@ -48,12 +48,12 @@ You have to follow the **MIT LICENSE** for this project.
 
 **Permissions**
 
-<code>
+
  ✅ Commercial use <br>
  ✅ Modification <br>
  ✅ Distribution <br>
  ✅ Private use <br>
- </code>
+
  
 **Limitations**
 

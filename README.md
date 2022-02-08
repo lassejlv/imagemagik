@@ -38,5 +38,26 @@ Run the server
 npm run dev
 ```
 
-
 Then go to <code>http://localhost:5000</code>
+
+---
+
+## License
+
+You have to follow the **MIT LICENSE** for this project.
+
+**Permissions**
+
+ ✅ Commercial use
+ ✅ Modification
+ ✅ Distribution
+ ✅ Private use
+ 
+**Limitations**
+
+ ❌ Liability
+ ❌ Warranty
+ 
+**Conditions**
+
+ℹ️ License and copyright notice

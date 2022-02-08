@@ -39,4 +39,4 @@ npm run dev
 ```
 
 
-Then go to <pre>http://localhost:5000</pre>
+Then go to <code>http://localhost:5000</code>

@@ -48,15 +48,17 @@ You have to follow the **MIT LICENSE** for this project.
 
 **Permissions**
 
- ✅ Commercial use
- ✅ Modification
- ✅ Distribution
- ✅ Private use
+<code>
+ ✅ Commercial use <br>
+ ✅ Modification <br>
+ ✅ Distribution <br>
+ ✅ Private use <br>
+ </code>
  
 **Limitations**
 
- ❌ Liability
- ❌ Warranty
+ ❌ Liability <br>
+ ❌ Warranty <br>
  
 **Conditions**
 

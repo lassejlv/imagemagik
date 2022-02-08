@@ -12,7 +12,7 @@
 
 <div align="center">
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?style=plastic)](https://github.com/lassev05/imagemagik/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?style=for-the-badge)](https://github.com/lassv/imagemagik/blob/master/LICENSE)
 
 </div>
 

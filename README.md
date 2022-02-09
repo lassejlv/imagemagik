@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.imagemagik.tk">
-    <img src="https://www.imagemagik.tk/uploads/VkMa5yca1tMH9Pq-upload.png" alt="Hypestyle logo" width="200" height="165">
+    <img src="https://www.imagemagik.tk/uploads/pUWJLN6rozkf4Wd-upload.png" alt="Hypestyle logo" width="200" height="165">
   </a>
 </p>
 
